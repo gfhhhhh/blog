@@ -13,25 +13,16 @@
 <script>
 var player = new Aliplayer({
   "id": "player-con",
-  "source": "//cdn16.yzzy-online.com/20230414/7_d0737c10/2000k/hls/index.m3u8",
+  "source": "https://cdn16.yzzy-online.com/20230414/7_d0737c10/2000k/hls/index.m3u8",
   "width": "100%",
   "height": "500px",
   "autoplay": true,
-  "isLive": false,
+  "isLive": true,
   "rePlay": false,
   "playsinline": true,
   "preload": true,
   "controlBarVisibility": "hover",
-  "useH5Prism": true,
-  "skinLayout": [
-    {
-      "name": "controlBar",
-      "align": "blabs",
-      "x": 0,
-      "y": 0,
-      "children": []
-    }
-  ]
+  "useH5Prism": true
 }, function (player) {
     console.log("The player is created");
   }
